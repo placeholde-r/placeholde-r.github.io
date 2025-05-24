@@ -2,20 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Play 1v1.lol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>placeholde-r's Game Hub</title>
   <style>
-    body, html {
-      margin: 0; padding: 0; height: 100%;
-      overflow: hidden;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 2rem 1rem;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
     }
-    iframe {
-      width: 100vw;
-      height: 100vh;
-      border: none;
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 400px;
+      width: 100%;
+    }
+    .game-card {
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(255, 152, 0, 0.7);
+    }
+    .game-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 3px solid #ff9800;
+    }
+    .game-info {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-align: center;
+      user-select: none;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://1v1.lol" allowfullscreen></iframe>
+  <main>
+    <a href="https://1v1.lol" class="game-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/81/1v1lol_logo.png" alt="1v1.lol" />
+      <div class="game-info">1v1.lol (External Link)</div>
+    </a>
+  </main>
 </body>
 </html>
