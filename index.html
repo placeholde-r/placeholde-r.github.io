@@ -16,83 +16,125 @@
   />
 </head>
 <body class="default">
-<nav class="Navigation hideAfterFullscreen">
-  <div class="Navigation-Container">
-    <a class="Navigation-Image" href="./"><img src="./Assets/Imgs/Logo.svg" alt="Logo" /></a>
-    <ul>
-      <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
-      <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
-      <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
-      <li class="Navigation-Button"><a href="https://geography-basic-10.pro/" target="_blank"><p>👌NEW CLASS</p></a></li>
-      <li class="Navigation-Button"><a href="https://quiz-40.space/" target="_blank"><p>👌NEW CLASS 2</p></a></li>
-    <ul>
+  <nav class="Navigation hideAfterFullscreen">
+    <div class="Navigation-Container">
+      <a class="Navigation-Image" href="./">
+        <img src="./Assets/Imgs/Logo.svg" alt="Logo" />
+      </a>
+      <ul>
+        <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
+        <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
+        <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
+        <li class="Navigation-Button"><a href="https://geography-basic-10.pro/" target="_blank"><p>👌NEW CLASS</p></a></li>
+        <li class="Navigation-Button"><a href="https://quiz-40.space/" target="_blank"><p>👌NEW CLASS 2</p></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="Projects-Frame hidden">
+    <div class="Projects-FrameBar">
+      <i id="close" class="las la-times-circle"></i>
+      <i id="fullscreen" class="las la-expand"></i>
+      <i id="link" class="las la-link"></i>
+    </div>
+    <iframe class="Projects-IFrame" src=""></iframe>
   </div>
-</nav>
 
-<div class="Projects-Frame hidden">
-  <div class="Projects-FrameBar">
-    <i id="close" class="las la-times-circle"></i>
-    <i id="fullscreen" class="las la-expand"></i>
-    <i id="link" class="las la-link"></i>
+  <div class="hideAfterFullscreen">
+    <center>
+      <h1 style="margin-top: 25px; color: var(--text-color1)">Geometry 76</h1>
+      <br />
+    </center>
+    <hr />
+    <center style="padding: 2em 0 0 0">
+      <input
+        type="text"
+        class="Settings-TextInput"
+        id="GameSearchBar"
+        placeholder="Search For Project"
+      />
+    </center>
   </div>
-  <iframe class="Projects-IFrame" src=""></iframe>
-</div>
 
-<div class="hideAfterFullscreen">
-  <center>
-    <h1 style="margin-top: 25px; color: var(--text-color1)">Geometry 76</h1>
-    <br />
-  </center>
-  <hr />
-  <center style="padding: 2em 0 0 0">
-    <input type="text" class="Settings-TextInput" id="GameSearchBar" placeholder="Search For Project" />
-  </center>
-</div>
+  <div class="Projects-Container hideAfterFullscreen">
+    <div class="Project-Card">
+      <iframe
+        src="https://1v1.lol/"
+        frameborder="0"
+        allowfullscreen
+        width="100%"
+        height="300px"
+      ></iframe>
+      <p>1v1.lol</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/8/81/1v1lol_logo.png"
+        alt="1v1.lol Logo"
+      />
+      <div>1v1.lol</div>
+    </div>
+  </div>
 
-<div class="Projects-Container hideAfterFullscreen">
-  <a href="https://1v1.lol" class="game-card" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/en/8/81/1v1lol_logo.png" alt="1v1.lol" />
-    <div>1v1.lol</div>
-  </a>
-</div>
+  <div class="Projects-Container hideAfterFullscreen">
+    <footer class="footer">
+      <p>
+        The American secondary school object lesson is a teaching method that
+        emphasizes the use of tangible objects to illustrate abstract
+        concepts. Dating back to the late 19th century, this educational
+        approach aimed to make learning more engaging and practical for
+        students.
+      </p>
+      <p>
+        In object lessons, teachers would bring everyday items like rocks,
+        plants, or tools into the classroom to demonstrate scientific
+        principles, mathematical concepts, or moral lessons. For example, a
+        teacher might use a plant to explain the life cycle or a rock to
+        demonstrate the properties of minerals.
+      </p>
+      <p>
+        This hands-on approach to learning was believed to be more effective
+        than traditional rote memorization, as it encouraged students to
+        explore and discover knowledge for themselves. Object lessons were
+        also thought to promote critical thinking and problem-solving skills,
+        as students were required to observe, analyze, and draw conclusions
+        from the objects presented to them.
+      </p>
+      <p>
+        While the use of object lessons has declined in modern American
+        schools, some educators still incorporate this method into their
+        teaching practices, recognizing its value in making learning more
+        interactive and memorable for students.
+      </p>
+    </footer>
+  </div>
 
-<div class="Projects-Container hideAfterFullscreen">
-  <footer class="footer">
-    <p>The American secondary school object lesson is a teaching method that emphasizes the use of tangible objects to illustrate abstract concepts. Dating back to the late 19th century, this educational approach aimed to make learning more engaging and practical for students.</p>
-    <p>In object lessons, teachers would bring everyday items like rocks, plants, or tools into the classroom to demonstrate scientific principles, mathematical concepts, or moral lessons. For example, a teacher might use a plant to explain the life cycle or a rock to demonstrate the properties of minerals.</p>
-    <p>This hands-on approach to learning was believed to be more effective than traditional rote memorization, as it encouraged students to explore and discover knowledge for themselves. Object lessons were also thought to promote critical thinking and problem-solving skills, as students were required to observe, analyze, and draw conclusions from the objects presented to them.</p>
-    <p>While the use of object lessons has declined in modern American schools, some educators still incorporate this method into their teaching practices, recognizing its value in making learning more interactive and memorable for students.</p>
-  </footer>
-</div>
+  <script src="./Assets/JS/aboutblank.js"></script>
+  <script src="./Assets/JS/options.js"></script>
+  <script src="./Assets/JS/g.js"></script>
 
-<script src="./Assets/JS/aboutblank.js"></script>
-<script src="./Assets/JS/options.js"></script>
-<script src="./Assets/JS/g.js"></script>
+  <style>
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding-block: 15px;
+      line-height: 28px;
+      font-size: 15px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 2rem;
+    }
 
-<style>
-  .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding-block: 15px;
-    line-height: 28px;
-    font-size: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 2rem;
-  }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      background-color: black;
+      transition: color 0.15s ease;
+    }
 
-  .footer a {
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    transition: color 0.15s ease;
-  }
-
-  .footer a:hover {
-    color: rgb(225, 139, 9);
-    text-decoration: underline;
-  }
-</style>
+    .footer a:hover {
+      color: rgb(225, 139, 9);
+      text-decoration: underline;
+    }
+  </style>
 </body>
 </html>
