@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Clicker Clone</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      background: #f9f2ec;
+    }
+    #cookie {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    #cookie:active {
+      transform: scale(0.95);
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    #counter {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🍪 Cookie Clicker Clone</h1>
+  <img id="cookie" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Chocolate_Chip_Cookie.png" alt="cookie">
+  <div id="counter">Cookies: 0</div>
+
+  <script>
+    let count = 0;
+    const cookie = document.getElementById('cookie');
+    const counter = document.getElementById('counter');
+
+    cookie.addEventListener('click', () => {
+      count++;
+      counter.textContent = `Cookies: ${count}`;
+    });
+  </script>
+</body>
+</html>
