@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2048</title>
+  <title>gd</title>
   <style>
     html, body {
       margin: 0;
@@ -17,6 +17,6 @@
   </style>
 </head>
 <body>
-  <iframe src="https://play2048.co/"></iframe>
+  <iframe src="https://neonflight.github.io/gdclone/" width="100%" height="600" style="border: none;"></iframe>
 </body>
 </html>
