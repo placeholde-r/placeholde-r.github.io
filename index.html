@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Grid</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .tile {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .tile:hover {
+      transform: scale(1.05);
+    }
+    .tile p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose a Game</h1>
+  <div class="grid">
+    <a class="tile" href="./2048/">
+      <p>2048</p>
+    </a>
+    <a class="tile" href="./snake/">
+      <p>Snake</p>
+    </a>
+    <a class="tile" href="./cookie-clicker/">
+      <p>Cookie Clicker</p>
+    </a>
+    <a class="tile" href="./gd/">
+      <p>Geometry Dash Lite</p>
+    </a>
+  </div>
+</body>
+</html>
